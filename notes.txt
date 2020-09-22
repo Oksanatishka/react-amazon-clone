@@ -1,0 +1,58 @@
+- Context API (React)
+- Firebase (user authentication + database)
+- React JS for front-end
+- Firebase hosting to deploy it live
+- React Router
+
+Steps:
+-> Demo App
+    - Set up React App using create-react-app
+    - Set up Firebase
+    - Set up React Router
+        > npm i react-router-dom
+        import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+        wrap entire <App/> component into <Router>
+        add:
+            <Switch>
+                <Route path="/checkout"><h1>Checkout</h1></Route>
+                <Route path="/login"><h1>Login page</h1></Route>
+                {/* default route */}
+                <Route path="/"><h1>Home page</h1></Route>
+            </Switch>
+    - Build the nav bar (header)
+        create Header.js
+        Material UI:    
+            > npm install @material-ui/core
+            > npm install @material-ui/icons        // https://material-ui.com/ru/components/icons/
+            import SearchIcon from '@material-ui/icons/Search'
+    - Build the Banner
+        create Home.js
+- Build the Product component
+    create Product.js
+- Introduce React Context API
+    create StateProvider.js
+- Setup Add to Basket Button
+- Build Checkout page
+    create Checkout.js, CheckoutProduct.js
+- Build Subtotal component
+    create Subtotal.js
+    > npm i react-currency-format
+- Build Login page
+    create firebase.js
+    > npm i firebase
+- Deploy the App live on Firebase
+
+
+------------------------------------------------------------------------------------------
+BEM - for class naming convention
+⭐ https://dev.to/pjijin/emoji-on-vscode--571l
+    Usage:
+        1) Install the 'Emoji Snippets' Extension on Visual Code
+        2) And when you want to insert emoji just type :keyword and then it will suggest the emoji related to that keyword. You can use the emoji from https://emojipedia.org/ just type : and then the name of emoji.
+
+Firebase - instead of mongoDB & NodeJS
+React Context API - instead of Redux
+
+JS optional chaining operator (?.) https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining
+JS Nullish coalescing operator (??) https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Nullish_Coalescing_Operator
+
